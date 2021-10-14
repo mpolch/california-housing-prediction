@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-import os
-import dotenv
 
-project_dir = os.path.join(os.path.dirname(__file__), os.pardir)
-dotenv_path = os.path.join(project_dir, '.env')
-dotenv.load_dotenv(dotenv_path)
 # <a id='Q0'></a>
 # <center><a target="_blank" href="http://www.propulsion.academy"><img src="https://drive.google.com/uc?id=1McNxpNrSwfqu1w-QtlOmPSmfULvkkMQV" width="200" style="background:none; border:none; box-shadow:none;" /></a> </center>
 # <center> <h1> Live Coding 1: Simple Prediction Notebook</h1> </center>
@@ -65,8 +60,8 @@ from sklearn.pipeline import Pipeline
 # In[2]:
 
 
-#data_path = "../data/raw/california_housing_0.csv"
-data_path = os.getenv("DATA_PATH")
+data_path = "../data/raw/california_housing_0.csv"
+
 
 # <a id='P1'></a>
 # ## [Data Preparation](#P0)
